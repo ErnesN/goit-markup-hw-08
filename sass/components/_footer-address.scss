@@ -1,0 +1,17 @@
+.address {
+    line-height: 1.71;
+    color: $hero-color;
+    font-style: inherit;
+}
+
+.address__link {
+    display: block;
+    margin-top: 9px;
+    color: rgba(255, 255, 255, 0.6);
+    transition: color $transition-duration;
+
+    &:hover,
+    &:focus {
+    color: $accent-color
+}
+}

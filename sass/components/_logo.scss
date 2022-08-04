@@ -1,0 +1,24 @@
+.logo {
+    display: block;
+    font-family: $logo-font;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    color: $logo-color-black;
+}
+
+.logo--distance-right {
+    margin-right: 93px;
+}
+
+.logo--color-blue {
+    color: $accent-color;
+}
+
+.logo--color-white {
+    color: $hero-color;
+}
+
+.logo--margin-bottom {
+    margin-bottom: 20px;
+}

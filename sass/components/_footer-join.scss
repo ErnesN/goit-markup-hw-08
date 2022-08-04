@@ -1,0 +1,32 @@
+.join-footer {
+    margin-left: 70px;
+}
+
+.join-footer__list {
+    display: flex;
+}
+
+.join-footer__item:not(:last-child) {
+    margin-right: 10px;
+}
+
+.join-footer__link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 44px;
+    width: 44px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.1);
+    transition: background-color $transition-duration;
+
+    &:hover,
+    &:focus {
+    background-color: $accent-color;
+}
+}
+
+.join-footer__icon {
+    fill: $hero-color;
+}
+

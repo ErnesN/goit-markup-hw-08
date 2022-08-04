@@ -1,0 +1,69 @@
+.stuff__item {
+    background: $hero-color;
+    border-radius: 0px 0px 4px 4px;
+    box-shadow: $box-shadow;
+
+    &:not(:last-child) {
+    margin-right: 30px;
+}
+}
+
+.stuff__card {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.stuff__title-name {
+    margin-bottom: 10px;
+    font-weight: 500;
+    color: $title-text-color;
+}
+
+.stuff__position {
+    margin-bottom: 16px;
+}
+
+.stuff__position,
+.stuff__title-name {
+    font-size: 16px;
+    line-height: 1.19;
+    text-align: center;
+}
+
+.stuff-social {
+    display: flex;
+    padding-left: 32px;
+    padding-right: 32px;
+
+    &__item:not(:last-child) {
+    margin-right: 10px;
+}
+}
+
+.stuff-social__link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background-color: $hero-color;
+    transition: background-color $transition-duration;
+
+    &:hover,
+    &:focus {
+    background-color: $accent-color;
+}
+    &:hover .stuff-social__icon,
+    &:focus .stuff-social__icon {
+    fill: $hero-color;
+}
+}
+
+.stuff-social__icon {
+    fill: $primary-icon-color;
+    transition: fill $transition-duration;
+}
+
+
+

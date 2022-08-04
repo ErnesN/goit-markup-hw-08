@@ -1,0 +1,30 @@
+.advantage__item {
+    width: 270px;
+
+   &:not(:last-child) {
+    margin-right: 30px;
+} 
+}
+
+.advantage__icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 120px;
+    margin-bottom: 30px;
+    background: #F5F4FA;
+    border-radius: $border-radius;
+}
+
+.advantage__title {
+    margin-bottom: 10px;
+    font-size: inherit;
+    font-weight: 700;
+    line-height: 1.14;
+    color: $title-text-color;
+    text-transform: uppercase;
+}
+
+.advantage__text {
+    line-height: 1.71;
+}
