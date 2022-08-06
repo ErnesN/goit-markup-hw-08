@@ -1,12 +1,16 @@
 .site-nav__list {
+    @media screen and (min-width: 768px) {
     display: flex;
+    }
 }
 .site-nav__item {
+    @media screen and (min-width: 768px) {
     position: relative;
 
     &:not(:first-child) {
             margin-left: 50px;
         }
+}        
 }
 
 .site-nav__link {
@@ -15,15 +19,18 @@
     line-height: 1.14;
     letter-spacing: 0.02em;
     color: $title-text-color;
-    padding-top: 32px;
-    padding-bottom: 32px;
     transition: color $transition-duration;
 
     &--position,
     &:hover,
     &:focus {
     color: $accent-color;
+    @media screen and (min-width: 768px) {
+    padding-top: 32px;
+    padding-bottom: 32px;   
+    }
 }
+ @media screen and (min-width: 768px) {
         &--position::after {
             content: "";
             position: absolute;
@@ -35,4 +42,32 @@
             border-radius: 2px;
             background-color: $accent-color;
         }
+}        
+}
+.menu-button {
+    display: inline-flex;
+    margin: 0;
+    bottom: 0;
+    border: none;
+    background-color: transparent;
+}
+.menu-button .icon-close {
+    display: none;
+}
+.menu-button.is-open .icon-close {
+    display: block;
+}
+.menu-button.is-open .icon-menu {
+    display: none;
+}
+
+
+.site-nav {
+    @media screen and (max-width: 767px) {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: $hero-color;        
+    }
 }
