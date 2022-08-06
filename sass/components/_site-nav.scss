@@ -20,15 +20,17 @@
     letter-spacing: 0.02em;
     color: $title-text-color;
     transition: color $transition-duration;
+    
+    @media screen and (min-width: 768px) {
+    padding-top: 32px;
+    padding-bottom: 32px;   
+    }
 
     &--position,
     &:hover,
     &:focus {
     color: $accent-color;
-    @media screen and (min-width: 768px) {
-    padding-top: 32px;
-    padding-bottom: 32px;   
-    }
+    
 }
  @media screen and (min-width: 768px) {
         &--position::after {
@@ -44,30 +46,9 @@
         }
 }        
 }
-.menu-button {
-    display: inline-flex;
-    margin: 0;
-    bottom: 0;
-    border: none;
-    background-color: transparent;
-}
-.menu-button .icon-close {
-    display: none;
-}
-.menu-button.is-open .icon-close {
-    display: block;
-}
-.menu-button.is-open .icon-menu {
-    display: none;
-}
-
-
 .site-nav {
     @media screen and (max-width: 767px) {
-    position: absolute;
-    top: 100%;
-    left: 0;
-    width: 100%;
-    background-color: $hero-color;        
+        display: none;
     }
+        
 }
