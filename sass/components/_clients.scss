@@ -1,6 +1,12 @@
 .client__item:not(:last-child) {
     margin-right: 30px;
 }
+.client__list {
+    display: flex;
+    @media screen and (max-width: 1199px) {
+        flex-wrap: wrap;
+    }
+}
 
 .client__link {
     display: flex;

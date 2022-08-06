@@ -2,12 +2,14 @@
     padding-top: 60px;
     padding-bottom: 60px;
     background-color: $footer-bgc;
-    
-    &--centered {
+}
+
+    .footer--centered {
+     @media screen and (min-width: 1200px) {   
     display: flex;
     align-items: baseline;
-}
-}
+
+}}
 
 .footer__title {
     margin-bottom: 20px;
