@@ -1,10 +1,14 @@
-.mobile-nav {
+.header-container {
+    position: relative;
     @media screen and (min-width: 768px) {
         display: none;
     }
 }
 
 .menu-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
     display: inline-flex;
     margin: 0;
     margin-left: auto;
@@ -29,14 +33,66 @@
 .menu-mobile {
     display: none;
     position: absolute;
-    top: 100%;
+    top: 0;
     left: 0;
     width: 100%;
     height: 796px;
     background-color: $hero-color;
+    padding-top: 48px;
+    padding-left: 40px;
 
     &.is-open {
         display: block;
     }
     
+}
+.menu-mobile__list {
+    margin-bottom: 306px;
+}
+.menu-mobile__item:not(:last-child) {
+margin-bottom: 32px;
+}
+.menu-mobile__link {
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 1.175;
+    letter-spacing: 0.02em;
+     color: #212121;
+
+     &:hover {
+        color: $accent-color;
+     }
+}
+.mobile-contact__phone {
+    display: block;
+    font-weight: 500;
+    font-size: 34px;
+    line-height: 1.176;
+    letter-spacing: 0.02em;
+    color: $accent-color;
+    margin-bottom: 32px;
+}
+.mobile-contact__mail {
+    display: block;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 1.167;
+    letter-spacing: 0.02em;
+    color: $primary-text-color;
+    margin-bottom: 64px;
+}
+.menu-social {
+    display: flex;
+}
+.menu-social__item::before {
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    transform: rotate(90deg);
+    width: 22px;
+}
+.menu-social__link {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.222;
+    letter-spacing: 0.02em;
+    color: $accent-color;
 }
