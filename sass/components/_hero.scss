@@ -3,31 +3,26 @@
     text-align: center;
     letter-spacing: 0.06em;
     color: $hero-color;
-    width: 480px;
-    height: 400px;
-    background-size: 480px 400px;
+    background-size: cover;
     background-image: $linear-gradient, url(/images/mobile/Header-mobile@1x.jpg);
     background-color: $bgc-hero;
 
-    @media screen and (min-width: 480px) {
+    @media screen and (max-width: 767px ) {
         @media screen and (min-device-pixel-ratio:2), 
         screen and (min-resolution: 192dpi),
         screen and (min-resolution: 2dppx) {
         .hero {
-            background-image: url(/images/mobile/Header-mobile@2x.jpg);
+            background-image: $linear-gradient, url(/images/mobile/Header-mobile@2x.jpg);
         }
     }
     }
     @media screen and (min-width: 768px) {
-        width: 768px;
-        height: 400px;
-        background-size: 768px 400px;
         background-image: $linear-gradient, url(/images/tablet/Header-tablet@1x.jpg);
         @media screen and (min-device-pixel-ratio:2),
             screen and (min-resolution: 192dpi),
             screen and (min-resolution: 2dppx) {
                 .hero {
-                    background-image: url(/images/tablet/Header-tablet@2x.jpg);
+                    background-image: $linear-gradient, url(/images/tablet/Header-tablet@2x.jpg);
                 }
     }
     }
@@ -37,9 +32,6 @@
         
     }
     @media screen and (min-width: 1200px) {
-        width: 1600px;
-        height: 600px;
-        background-size: 1600px 600px;
         background-image: $linear-gradient, url(/images/descktop/header-desktop@1x.jpg);
         padding-bottom: 200px;
         padding-top: 200px;
@@ -47,7 +39,7 @@
             screen and (min-resolution: 192dpi),
             screen and (min-resolution: 2dppx) {
                 .hero {
-                    background-image: url(/images/descktop/header-desktop@2x.jpg);
+                    background-image: $linear-gradient, url(/images/descktop/header-desktop@2x.jpg);
                 }
         
     }
@@ -63,9 +55,11 @@
     letter-spacing: 0.06em;
 
     @media screen and (max-width: 1199px) {
-    width: 360px;
     font-size: 26px;
     line-height: 1.61;
+    }
+    @media screen and (min-width: 480px) and (max-width: 1199px) {
+    width: 360px;   
     }
     @media screen and (min-width: 1200px) {
     width: 696px;
