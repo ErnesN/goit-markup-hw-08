@@ -32,7 +32,7 @@
 }
 .stuff__photo {
     @media screen and (max-width: 767px) {
-    max-width: 450px;
+        max-width: 450px;
     }
 
     @media screen and (min-width: 768px) and (max-width: 1199px) {
