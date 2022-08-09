@@ -4,7 +4,7 @@
     letter-spacing: 0.06em;
     color: $hero-color;
     background-size: cover;
-    background-image: $linear-gradient, url(/images/mobile/Header-mobile@1x.jpg);
+    background-image: $linear-gradient, url(../images/mobile/Header-mobile@1x.jpg);
     background-color: $bgc-hero;
 
     @media screen and (max-width: 767px ) {
@@ -12,17 +12,17 @@
         screen and (min-resolution: 192dpi),
         screen and (min-resolution: 2dppx) {
         .hero {
-            background-image: $linear-gradient, url(/images/mobile/Header-mobile@2x.jpg);
+            background-image: $linear-gradient, url(../images/mobile/Header-mobile@2x.jpg);
         }
     }
     }
     @media screen and (min-width: 768px) {
-        background-image: $linear-gradient, url(/images/tablet/Header-tablet@1x.jpg);
+        background-image: $linear-gradient, url(../images/tablet/Header-tablet@1x.jpg);
         @media screen and (min-device-pixel-ratio:2),
             screen and (min-resolution: 192dpi),
             screen and (min-resolution: 2dppx) {
                 .hero {
-                    background-image: $linear-gradient, url(/images/tablet/Header-tablet@2x.jpg);
+                    background-image: $linear-gradient, url(../images/tablet/Header-tablet@2x.jpg);
                 }
     }
     }
@@ -32,14 +32,14 @@
         
     }
     @media screen and (min-width: 1200px) {
-        background-image: $linear-gradient, url(/images/descktop/header-desktop@1x.jpg);
+        background-image: $linear-gradient, url(../images/descktop/header-desktop@1x.jpg);
         padding-bottom: 200px;
         padding-top: 200px;
         @media screen and (min-device-pixel-ratio:2),
             screen and (min-resolution: 192dpi),
             screen and (min-resolution: 2dppx) {
                 .hero {
-                    background-image: $linear-gradient, url(/images/descktop/header-desktop@2x.jpg);
+                    background-image: $linear-gradient, url(../images/descktop/header-desktop@2x.jpg);
                 }
         
     }
