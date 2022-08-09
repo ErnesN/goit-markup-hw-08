@@ -27,9 +27,7 @@
     font-size: 16px;
     line-height: 1.25;
     color: rgba(255, 255, 255, 0.6);
-    @media screen and (min-width: 480px) and(max-width: 767px) {
-        width: 450px;
-    }
+    
     @media screen and (min-width: 768px) and (max-width: 1199px) {
         width: 450px;
     }
@@ -70,9 +68,6 @@
     letter-spacing: 0.06em;
     cursor: pointer;
 
-    @media screen and (min-width: 480px) and(max-width: 767px) {
-           
-        }
     @media screen and (min-width: 1200px) {
     margin-left: 12px;        
         }
