@@ -66,6 +66,10 @@
     letter-spacing: 0.03em;
     line-height: 1.71;
     color: $primary-text-color;
+    @media screen and (max-width: 767px) {
+        font-size: 12px;
+        line-height: 1.1667;
+    }
 }
 
 .form__checkbox:checked+.form__checkboxicon {
@@ -79,7 +83,6 @@
 }
 
 .form__link {
-    margin-left: 5px;
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;

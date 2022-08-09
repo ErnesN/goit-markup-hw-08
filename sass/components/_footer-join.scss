@@ -1,4 +1,7 @@
 .join-footer {
+    @media screen and (max-width: 767px) {
+            margin-bottom: 60px;
+        }
     @media screen and (min-width: 1200px) {
     margin-left: 70px;    
     }
@@ -7,6 +10,9 @@
 
 .join-footer__list {
     display: flex;
+    @media screen and (max-width: 767px) {
+    justify-content: center;
+    }
 }
 
 .join-footer__item:not(:last-child) {

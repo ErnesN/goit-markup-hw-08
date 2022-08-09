@@ -7,7 +7,8 @@
 
     .footer--centered {
     @media screen and (max-width:767px) {
-        justify-content: center;
+        display: block;
+        text-align: center;
     }
 
      @media screen and (min-width: 1200px) {   
@@ -15,6 +16,19 @@
     align-items: baseline;
 }
 }
+.footer__tablet {
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+        display: flex;
+        align-items: baseline;
+        text-align: center;
+        justify-content: space-between;
+    }
+        @media screen and (min-width: 1200px) {
+            display: flex;
+            align-items: baseline;
+        }
+        }
+
 
 
 .footer__title {

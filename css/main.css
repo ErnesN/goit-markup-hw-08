@@ -239,6 +239,11 @@ img {
 
 @media screen and (min-width: 768px) {
   .logo--distance-right {
+    margin-right: 88px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .logo--distance-right {
     margin-right: 93px;
   }
 }
@@ -310,12 +315,19 @@ img {
   }
 }
 
-.contact {
-  margin-left: auto;
-}
 @media screen and (max-width: 767px) {
   .contact {
     display: none;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .contact {
+    margin-left: 90px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .contact {
+    margin-left: auto;
   }
 }
 
@@ -501,12 +513,22 @@ img {
   padding: 40px;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-  width: 528px;
-  height: 581px;
   background: #ffffff;
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
+}
+@media screen and (max-width: 1199px) {
+  .modal {
+    width: 450px;
+    height: 609px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .modal {
+    width: 528px;
+    height: 581px;
+  }
 }
 
 .modal__button {
@@ -610,6 +632,12 @@ img {
   line-height: 1.71;
   color: #757575;
 }
+@media screen and (max-width: 767px) {
+  .form__text {
+    font-size: 12px;
+    line-height: 1.1667;
+  }
+}
 
 .form__checkbox:checked + .form__checkboxicon {
   fill: #2196F3;
@@ -621,7 +649,6 @@ img {
 }
 
 .form__link {
-  margin-left: 5px;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
@@ -979,13 +1006,37 @@ img {
 
 @media screen and (max-width: 767px) {
   .footer--centered {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    display: block;
+    text-align: center;
   }
 }
 @media screen and (min-width: 1200px) {
   .footer--centered {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .footer__tablet {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+    text-align: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer__tablet {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1009,6 +1060,11 @@ img {
   color: #ffffff;
   font-style: inherit;
 }
+@media screen and (max-width: 767px) {
+  .address {
+    margin-bottom: 60px;
+  }
+}
 
 .address__link {
   display: block;
@@ -1021,6 +1077,11 @@ img {
   color: #2196F3;
 }
 
+@media screen and (max-width: 767px) {
+  .join-footer {
+    margin-bottom: 60px;
+  }
+}
 @media screen and (min-width: 1200px) {
   .join-footer {
     margin-left: 70px;
@@ -1031,6 +1092,13 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+@media screen and (max-width: 767px) {
+  .join-footer__list {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 
 .join-footer__item:not(:last-child) {
@@ -1062,6 +1130,13 @@ img {
   fill: #ffffff;
 }
 
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .subscribe {
+    text-align: center;
+    padding-left: 166px;
+    padding-right: 152px;
+  }
+}
 @media screen and (min-width: 1200px) {
   .subscribe {
     margin-left: 93px;
@@ -1102,13 +1177,12 @@ img {
 }
 
 .subscribe__btn {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-left: 12px;
   padding-top: 10px;
   padding-bottom: 10px;
   padding-left: 28px;
@@ -1123,6 +1197,11 @@ img {
   color: #FFFFFF;
   letter-spacing: 0.06em;
   cursor: pointer;
+}
+@media screen and (min-width: 1200px) {
+  .subscribe__btn {
+    margin-left: 12px;
+  }
 }
 
 .subscribe__icon {
