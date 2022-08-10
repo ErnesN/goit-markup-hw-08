@@ -69,18 +69,18 @@ img {
 }
 
 .container__title {
-  margin-bottom: 50px;
+  margin-bottom: 30px;
   font-weight: 700;
-  font-size: 36px;
-  line-height: 1.17;
+  font-size: 28px;
+  line-height: 1.179;
   text-align: center;
   color: #212121;
 }
-@media screen and (max-width: 1199px) {
+@media screen and (min-width: 1200px) {
   .container__title {
-    font-size: 28px;
-    line-height: 1.179;
-    margin-bottom: 30px;
+    font-size: 36px;
+    line-height: 1.17;
+    margin-bottom: 50px;
   }
 }
 
@@ -332,7 +332,8 @@ img {
   color: #ffffff;
 }
 
-.logo--margin-bottom {
+.logo--margin {
+  margin-top: 0;
   margin-bottom: 20px;
 }
 
@@ -1054,7 +1055,7 @@ img {
   display: -ms-flexbox;
   display: flex;
 }
-@media screen and (min-width: 768px) and (max-width: 1199px) {
+@media screen and (max-width: 1199px) {
   .client__list {
     margin: -15px;
   }
