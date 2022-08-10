@@ -225,7 +225,7 @@ img {
 }
 
 .menu-social__item:not(:last-child) {
-  margin-right: 20px;
+  margin-right: 10px;
 }
 
 .menu-social__link {
@@ -234,6 +234,17 @@ img {
   line-height: 1.222;
   letter-spacing: 0.02em;
   color: #2196F3;
+}
+
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  .menu-social__link--border::after {
+    content: "";
+    width: 22px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    -webkit-transform: rotate(90deg);
+            transform: rotate(90deg);
+    margin-left: 10px;
+  }
 }
 
 .logo {
