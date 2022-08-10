@@ -9,6 +9,9 @@
     background: $modal-bgc-color;
     box-shadow: $box-shadow;
     border-radius: $border-radius;
+    @media screen and (max-width:479px) {
+            width: 100%;
+        }
     @media screen and (max-width:1199px) {
     width: 450px;
     height: 609px;    
