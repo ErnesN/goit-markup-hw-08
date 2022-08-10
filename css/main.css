@@ -117,8 +117,20 @@ img {
 .header__container {
   position: relative;
 }
+.menu-mobile {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 48px 40px;
+  width: 480px;
+  background-color: #ffffff;
+}
+.menu-mobile.is-open {
+  display: block;
+}
 @media screen and (min-width: 768px) {
-  .mobile-nav {
+  .menu-mobile {
     display: none;
   }
 }
@@ -135,6 +147,8 @@ img {
   padding: 0;
   border: none;
   background-color: transparent;
+  z-index: 1;
+  cursor: pointer;
 }
 
 .menu-button .icon-close {
@@ -149,19 +163,9 @@ img {
   display: none;
 }
 
-.menu-mobile {
-  display: none;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 796px;
-  height: 100vh;
-  background-color: #ffffff;
-  padding-top: 48px;
-  padding-left: 40px;
-}
-.menu-mobile.is-open {
-  display: block;
+.icon-menu:hover,
+.icon-menu:focus {
+  fill: #2196F3;
 }
 
 .menu-mobile__list {
