@@ -69,4 +69,9 @@ img {
     line-height: 1.17;
     text-align: center;
     color: $title-text-color;
+    @media screen and (max-width: 1199px) {
+        font-size: 28px;
+        line-height: 1.179;
+        margin-bottom: 30px;
+    }
 }

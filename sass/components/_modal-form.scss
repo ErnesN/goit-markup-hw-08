@@ -2,9 +2,12 @@
     margin-bottom: 12px;
     font-weight: 700;
     font-size: 20px;
-    line-height: 23px;
+    line-height: 1.5;
     text-align: center;
     color: $title-text-color;
+    @media screen and (min-width: 1200pxle) {
+        line-height: 1.15;
+    }
 }
 
 .form__label {
@@ -25,6 +28,7 @@
     &:not(:last-child) {
     margin-bottom: 10px;
 }
+
 }
 
 .form__input {
@@ -62,14 +66,14 @@
 }
 
 .form__text {
-    font-size: 14px;
-    letter-spacing: 0.03em;
-    line-height: 1.71;
+    font-size: 12px;
+    line-height: 1.167;
     color: $primary-text-color;
-    @media screen and (max-width: 767px) {
-        font-size: 12px;
-        line-height: 1.1667;
-    }
+    
+        @media screen and (min-width: 1200px) {
+            font-size: 14px;
+            line-height: 1.174;
+        }
 }
 
 .form__checkbox:checked+.form__checkboxicon {
@@ -83,11 +87,16 @@
 }
 
 .form__link {
-    font-size: 14px;
-    line-height: 1.71;
+    font-size: 12px;
+    line-height: 1.167;
     letter-spacing: 0.03em;
     text-decoration-line: underline;
     color: $accent-color;
+
+    @media screen and (min-width: 1200px) {
+    font-size: 14px;
+    line-height: 1.174;
+    }
 }
 
 .form__checkboxicon {

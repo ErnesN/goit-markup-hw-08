@@ -16,7 +16,7 @@
 }
 
 .subscribe__input {
-    max-width: 450px;
+    width: 450px;
     height: 50px;
     padding-left: 16px;
     background: $footer-bgc;
@@ -28,6 +28,9 @@
     line-height: 1.25;
     color: rgba(255, 255, 255, 0.6);
     
+    @media screen and (max-width: 479px) {
+        width: 100%;
+    }
     @media screen and (min-width: 768px) and (max-width: 1199px) {
         width: 450px;
     }
@@ -44,6 +47,7 @@
             display: flex;
             flex-direction: column;
             align-self: center;
+            text-align: center;
         }
     @media screen and (min-width: 1200px) {
      display: flex;   
@@ -56,7 +60,7 @@
     width: 200px;
     padding-top: 10px;
     padding-bottom: 10px;
-    padding-left: 28px;
+    padding-left: 31px;
     background: $accent-color;
     box-shadow: $btn-box-shadow;
     border-radius: $border-radius;
@@ -67,14 +71,21 @@
     color: #FFFFFF;
     letter-spacing: 0.06em;
     cursor: pointer;
-
+    @media screen and (max-width: 767px) {
+        margin-right: auto;
+        margin-left: auto;
+    }
     @media screen and (min-width: 1200px) {
-    margin-left: 12px;        
+    margin-left: 12px;
+    padding-left: 28px;        
         }
 }
 
 .subscribe__icon {
     fill: $hero-color;
-    margin-left: 10px;
+    margin-left: 12px;
     margin-right: 28px;
+    @media screen and (min-width: 1200px) {
+    margin-left: 10px;
+    }
 }

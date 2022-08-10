@@ -9,7 +9,7 @@
 
 .address__link {
     display: block;
-    margin-top: 9px;
+    margin-top: 8px;
     color: rgba(255, 255, 255, 0.6);
     transition: color $transition-duration;
 
@@ -17,4 +17,8 @@
     &:focus {
     color: $accent-color
 }
+@media screen and (min-width: 1200px){
+margin-top: 9px;
+}
+
 }
