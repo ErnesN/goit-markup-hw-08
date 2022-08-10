@@ -15,16 +15,14 @@
     top: 0;
     left: 0;
     padding: 48px 40px;
-    width: 480px;
-    height: 796px;
+    width: 100%;
+    
     background-color: $hero-color;
-
+    z-index: 1;
     &.is-open {
             display: block;
         }
-    @media screen and (max-width: 479px) {
-        width: 100%;
-    }
+    
 }
 .menu-button {
     position: absolute;
@@ -36,7 +34,7 @@
     padding: 0;
     border: none;
     background-color: transparent;
-    z-index: 1;
+    z-index: 2;
     cursor: pointer;
 }
 
@@ -61,6 +59,9 @@
 
 .menu-mobile__list {
     margin-bottom: 306px;
+    @media screen and (max-width: 479px) {
+     margin-bottom: 90px;
+    }
 }
 .menu-mobile__item:not(:last-child) {
 margin-bottom: 32px;
@@ -84,6 +85,9 @@ margin-bottom: 32px;
     letter-spacing: 0.02em;
     color: $accent-color;
     margin-bottom: 32px;
+    @media screen and (max-width: 479px) {
+    font-size: 24px;
+    }
 }
 .mobile-contact__mail {
     display: block;
@@ -110,6 +114,10 @@ margin-bottom: 32px;
     line-height: 1.222;
     letter-spacing: 0.02em;
     color: $accent-color;
+    @media screen and (max-width: 479px) {
+    font-size: 24px;
+    margin-bottom: 8px;
+    }
 }
 .menu-social__link--border::after {
     @media screen and (min-width:480px) and (max-width:767px) {
