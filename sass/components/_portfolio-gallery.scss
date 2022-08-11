@@ -103,7 +103,8 @@
 .gallery__photo {
     height: 294px;
     @media screen and (max-width: 479px) {
-        width: 100%;
+        max-width: 100%;
+        height: auto;
         }
     
     @media screen and (min-width: 480px) and(max-width: 767px) {
