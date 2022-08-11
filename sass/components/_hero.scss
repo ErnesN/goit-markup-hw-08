@@ -6,7 +6,7 @@
     background-size: cover;
     background-image: $linear-gradient, url(../images/mobile/Header-mobile@1x.jpg);
     background-color: $bgc-hero;
-
+    margin-top: 60px;
     @media screen and (max-width: 767px ) {
         @media screen and (min-device-pixel-ratio:2), 
         screen and (min-resolution: 192dpi),
@@ -28,8 +28,7 @@
     }
     @media screen and (max-width: 1199px) {
         padding-bottom: 118px;
-        padding-top: 118px;
-        
+        padding-top: 118px;  
     }
     @media screen and (min-width: 1200px) {
         background-image: $linear-gradient, url(../images/descktop/header-desktop@1x.jpg);

@@ -1,7 +1,14 @@
 .header {
   border-bottom: 1px solid #ECECEC;
   @media screen and (max-width: 767px) {
-  position: relative;  
+  position: relative;
+  position: fixed;
+  top: 0;
+  left: 0; 
+  height: 60px;
+  width: 100%;
+  background-color: $hero-color;
+   z-index: 1;
 }
 }
 
@@ -9,5 +16,4 @@
 .header__container {
   display: flex;  
   align-items: center;
-
 }
