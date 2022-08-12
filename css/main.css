@@ -292,8 +292,8 @@ img {
 
 .logo {
   display: block;
-  margin-top: 16px;
-  margin-bottom: 16px;
+  padding-top: 16px;
+  padding-bottom: 16px;
   font-family: "Raleway", sans-serif;
   font-weight: 700;
   font-size: 24px;
@@ -302,14 +302,14 @@ img {
 }
 @media screen and (min-width: 768px) {
   .logo {
-    margin-top: 26px;
-    margin-bottom: 26px;
+    padding-top: 26px;
+    padding-bottom: 26px;
   }
 }
 @media screen and (min-width: 1200px) {
   .logo {
-    margin-top: 24px;
-    margin-bottom: 25px;
+    padding-top: 24px;
+    padding-bottom: 25px;
     font-size: 26px;
     line-height: 1.19;
   }
@@ -464,7 +464,11 @@ img {
   background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/mobile/Header-mobile@1x.jpg);
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/mobile/Header-mobile@1x.jpg);
   background-color: #C4C4C4;
-  margin-top: 60px;
+}
+@media screen and (max-width: 767px) {
+  .hero {
+    margin-top: 60px;
+  }
 }
 @media screen and (max-width: 767px) and (min-device-pixel-ratio: 2), screen and (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2), screen and (max-width: 767px) and (min-resolution: 192dpi), screen and (max-width: 767px) and (min-resolution: 2dppx) {
   .hero .hero {
@@ -1568,17 +1572,17 @@ img {
 }
 
 .gallery__photo {
-  height: auto;
+  height: 294px;
 }
 @media screen and (max-width: 479px) {
   .gallery__photo {
     max-width: 100%;
+    height: auto;
   }
 }
 @media screen and (min-width: 480px) and (max-width: 767px) {
   .gallery__photo {
     width: 450px;
-    height: 294px;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {

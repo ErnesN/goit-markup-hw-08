@@ -152,20 +152,36 @@
           <ul class="gallery">
             <li class="gallery__item">
               <div class="gallery__description">
-                <img
-                  class="gallery__photo"
-                  srcset="
-                    ./images/mobile/project-mobile/project1-mobile@1x.jpg       1x,
-                    ./images/mobile/project-mobile/project1-mobile@2x.jpg       2x,
-                    ./images/tablet/project-tablet/project1-tablet@1x.jpg       1x,
-                    ./images/tablet/project-tablet/project1-tablet@2x.jpg       2x,
-                    ./images/descktop/project-descktop/project1-descktop@1x.jpg 1x,
-                    ./images/descktop/project-descktop/project1-descktop@2x.jpg 2x
-                  "
-                  src="./images/mobile/project-mobile/project1-mobile@1x.jpg"
-                  alt="ноутбук с сайтом"
-                  width="450"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/descktop/project-descktop/project1-descktop@1x.jpg 1x,
+                      ./images/descktop/project-descktop/project1-descktop@2x.jpg 2x
+                    "
+                    media="(min-width:1200px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/tablet/project-tablet/project1-tablet@1x.jpg 1x,
+                      ./images/tablet/project-tablet/project1-tablet@2x.jpg 2x
+                    "
+                    media="(min-width:768px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/mobile/project-mobile/project1-mobile@1x.jpg 1x,
+                      ./images/mobile/project-mobile/project1-mobile@2x.jpg 2x
+                    "
+                    media="(max-width:767px"
+                  />
+
+                  <img
+                    class="gallery__photo"
+                    src="./images/mobile/project-mobile/project1-mobile@1x.jpg"
+                    alt="ноутбук с сайтом"
+                    width="450"
+                  />
+                </picture>
                 <p class="gallery__text">
                   Ресурс пропонує комплексні пропозиції з різним рівнем
                   функціоналу та сервісів. Все це дозволить відвідувачу отримати
@@ -179,20 +195,36 @@
             </li>
             <li class="gallery__item">
               <div class="gallery__description">
-                <img
-                  class="gallery__photo"
-                  srcset="
-                    ./images/mobile/project-mobile/project2-mobile@1x.jpg       1x,
-                    ./images/mobile/project-mobile/project2-mobile@2x.jpg       2x,
-                    ./images/tablet/project-tablet/project2-tablet@1x.jpg       1x,
-                    ./images/tablet/project-tablet/project2-tablet@2x.jpg       2x,
-                    ./images/descktop/project-descktop/project2-descktop@1x.jpg 1x,
-                    ./images/descktop/project-descktop/project2-descktop@2x.jpg 2x
-                  "
-                  src="./images/mobile/project-mobile/project2-mobile@1x.jpg"
-                  alt="два баскетболиста"
-                  width="450"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/descktop/project-descktop/project2-descktop@1x.jpg 1x,
+                      ./images/descktop/project-descktop/project2-descktop@2x.jpg 2x
+                    "
+                    media="(min-width:1200px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/tablet/project-tablet/project2-tablet@1x.jpg 1x,
+                      ./images/tablet/project-tablet/project2-tablet@2x.jpg 2x
+                    "
+                    media="(min-width:768px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/mobile/project-mobile/project2-mobile@1x.jpg 1x,
+                      ./images/mobile/project-mobile/project2-mobile@2x.jpg 2x
+                    "
+                    media="(max-width:767px)"
+                  />
+
+                  <img
+                    class="gallery__photo"
+                    src="./images/mobile/project-mobile/project2-mobile@1x.jpg"
+                    alt="два баскетболиста"
+                    width="450"
+                  />
+                </picture>
                 <p class="gallery__text">
                   Ресурс пропонує комплексні пропозиції з різним рівнем
                   функціоналу та сервісів. Все це дозволить відвідувачу отримати
@@ -208,20 +240,36 @@
             </li>
             <li class="gallery__item">
               <div class="gallery__description">
-                <img
-                  class="gallery__photo"
-                  srcset="
-                    ./images/mobile/project-mobile/project3-mobile@1x.jpg       1x,
-                    ./images/mobile/project-mobile/project3-mobile@2x.jpg       2x,
-                    ./images/tablet/project-tablet/project3-tablet@1x.jpg       1x,
-                    ./images/tablet/project-tablet/project3-tablet@2x.jpg       2x,
-                    ./images/descktop/project-descktop/project3-descktop@1x.jpg 1x,
-                    ./images/descktop/project-descktop/project3-descktop@2x.jpg 2x
-                  "
-                  src="./images/mobile/project-mobile/project3-mobile@1x.jpg"
-                  alt="логотип ресторана"
-                  width="450"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/descktop/project-descktop/project3-descktop@1x.jpg 1x,
+                      ./images/descktop/project-descktop/project3-descktop@2x.jpg 2x
+                    "
+                    media="(min-width:1200px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/tablet/project-tablet/project3-tablet@1x.jpg 1x,
+                      ./images/tablet/project-tablet/project3-tablet@2x.jpg 2x
+                    "
+                    media="(min-width:768px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/mobile/project-mobile/project3-mobile@1x.jpg 1x,
+                      ./images/mobile/project-mobile/project3-mobile@2x.jpg 2x
+                    "
+                    media="(max-width:767px)"
+                  />
+
+                  <img
+                    class="gallery__photo"
+                    src="./images/mobile/project-mobile/project3-mobile@1x.jpg"
+                    alt="логотип ресторана"
+                    width="450"
+                  />
+                </picture>
                 <p class="gallery__text">
                   Ресурс пропонує комплексні пропозиції з різним рівнем
                   функціоналу та сервісів. Все це дозволить відвідувачу отримати
@@ -235,20 +283,36 @@
             </li>
             <li class="gallery__item">
               <div class="gallery__description">
-                <img
-                  class="gallery__photo"
-                  srcset="
-                    ./images/mobile/project-mobile/project4-mobile@1x.jpg       1x,
-                    ./images/mobile/project-mobile/project4-mobile@2x.jpg       2x,
-                    ./images/tablet/project-tablet/project4-tablet@1x.jpg       1x,
-                    ./images/tablet/project-tablet/project4-tablet@2x.jpg       2x,
-                    ./images/descktop/project-descktop/project4-descktop@1x.jpg 1x,
-                    ./images/descktop/project-descktop/project4-descktop@2x.jpg 2x
-                  "
-                  src="./images/mobile/project-mobile/project4-mobile@1x.jpg"
-                  alt="наушники"
-                  width="450"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/descktop/project-descktop/project4-descktop@1x.jpg 1x,
+                      ./images/descktop/project-descktop/project4-descktop@2x.jpg 2x
+                    "
+                    media="(min-width:1200px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/tablet/project-tablet/project4-tablet@1x.jpg 1x,
+                      ./images/tablet/project-tablet/project4-tablet@2x.jpg 2x
+                    "
+                    media="(min-width:768px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/mobile/project-mobile/project4-mobile@1x.jpg 1x,
+                      ./images/mobile/project-mobile/project4-mobile@2x.jpg 2x
+                    "
+                    media="(max-width:767px)"
+                  />
+
+                  <img
+                    class="gallery__photo"
+                    src="./images/mobile/project-mobile/project4-mobile@1x.jpg"
+                    alt="наушники"
+                    width="450"
+                  />
+                </picture>
                 <p class="gallery__text">
                   Ресурс пропонує комплексні пропозиції з різним рівнем
                   функціоналу та сервісів. Все це дозволить відвідувачу отримати
@@ -262,20 +326,36 @@
             </li>
             <li class="gallery__item">
               <div class="gallery__description">
-                <img
-                  class="gallery__photo"
-                  srcset="
-                    ./images/mobile/project-mobile/project5-mobile@1x.jpg       1x,
-                    ./images/mobile/project-mobile/project5-mobile@2x.jpg       2x,
-                    ./images/tablet/project-tablet/project5-tablet@1x.jpg       1x,
-                    ./images/tablet/project-tablet/project5-tablet@2x.jpg       2x,
-                    ./images/descktop/project-descktop/project5-descktop@1x.jpg 1x,
-                    ./images/descktop/project-descktop/project5-descktop@2x.jpg 2x
-                  "
-                  src="./images/mobile/project-mobile/project5-mobile@1x.jpg"
-                  alt="две коробки"
-                  width="450"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/descktop/project-descktop/project5-descktop@1x.jpg 1x,
+                      ./images/descktop/project-descktop/project5-descktop@2x.jpg 2x
+                    "
+                    media="(min-width:1200px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/tablet/project-tablet/project5-tablet@1x.jpg 1x,
+                      ./images/tablet/project-tablet/project5-tablet@2x.jpg 2x
+                    "
+                    media="(min-width:768px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/mobile/project-mobile/project5-mobile@1x.jpg 1x,
+                      ./images/mobile/project-mobile/project5-mobile@2x.jpg 2x
+                    "
+                    media="(max-width:767px)"
+                  />
+
+                  <img
+                    class="gallery__photo"
+                    src="./images/mobile/project-mobile/project5-mobile@1x.jpg"
+                    alt="две коробки"
+                    width="450"
+                  />
+                </picture>
                 <p class="gallery__text">
                   Ресурс пропонує комплексні пропозиції з різним рівнем
                   функціоналу та сервісів. Все це дозволить відвідувачу отримати
@@ -289,20 +369,36 @@
             </li>
             <li class="gallery__item">
               <div class="gallery__description">
-                <img
-                  class="gallery__photo"
-                  srcset="
-                    ./images/mobile/project-mobile/project6-mobile@1x.jpg       1x,
-                    ./images/mobile/project-mobile/project6-mobile@2x.jpg       2x,
-                    ./images/tablet/project-tablet/project6-tablet@1x.jpg       1x,
-                    ./images/tablet/project-tablet/project6-tablet@2x.jpg       2x,
-                    ./images/descktop/project-descktop/project6-descktop@1x.jpg 1x,
-                    ./images/descktop/project-descktop/project6-descktop@2x.jpg 2x
-                  "
-                  src="./images/mobile/project-mobile/project6-mobile@1x.jpg"
-                  alt="монитор"
-                  width="450"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/descktop/project-descktop/project6-descktop@1x.jpg 1x,
+                      ./images/descktop/project-descktop/project6-descktop@2x.jpg 2x
+                    "
+                    media="(min-width:1200px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/tablet/project-tablet/project6-tablet@1x.jpg 1x,
+                      ./images/tablet/project-tablet/project6-tablet@2x.jpg 2x
+                    "
+                    media="(min-width:768px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/mobile/project-mobile/project6-mobile@1x.jpg 1x,
+                      ./images/mobile/project-mobile/project6-mobile@2x.jpg 2x
+                    "
+                    media="(max-width:767px)"
+                  />
+
+                  <img
+                    class="gallery__photo"
+                    src="./images/mobile/project-mobile/project6-mobile@1x.jpg"
+                    alt="монитор"
+                    width="450"
+                  />
+                </picture>
                 <p class="gallery__text">
                   Ресурс пропонує комплексні пропозиції з різним рівнем
                   функціоналу та сервісів. Все це дозволить відвідувачу отримати
@@ -318,20 +414,36 @@
             </li>
             <li class="gallery__item">
               <div class="gallery__description">
-                <img
-                  class="gallery__photo"
-                  srcset="
-                    ./images/mobile/project-mobile/project7-mobile@1x.jpg       1x,
-                    ./images/mobile/project-mobile/project7-mobile@2x.jpg       2x,
-                    ./images/tablet/project-tablet/project7-tablet@1x.jpg       1x,
-                    ./images/tablet/project-tablet/project7-tablet@2x.jpg       2x,
-                    ./images/descktop/project-descktop/project7-descktop@1x.jpg 1x,
-                    ./images/descktop/project-descktop/project7-descktop@2x.jpg 2x
-                  "
-                  src="./images/mobile/project-mobile/project7-mobile@1x.jpg"
-                  alt="открытая книга"
-                  width="450"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/descktop/project-descktop/project7-descktop@1x.jpg 1x,
+                      ./images/descktop/project-descktop/project7-descktop@2x.jpg 2x
+                    "
+                    media="(min-width:1200px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/tablet/project-tablet/project7-tablet@1x.jpg 1x,
+                      ./images/tablet/project-tablet/project7-tablet@2x.jpg 2x
+                    "
+                    media="(min-width:768px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/mobile/project-mobile/project7-mobile@1x.jpg 1x,
+                      ./images/mobile/project-mobile/project7-mobile@2x.jpg 2x
+                    "
+                    media="(max-width:767px)"
+                  />
+
+                  <img
+                    class="gallery__photo"
+                    src="./images/mobile/project-mobile/project7-mobile@1x.jpg"
+                    alt="открытая книга"
+                    width="450"
+                  />
+                </picture>
                 <p class="gallery__text">
                   Ресурс пропонує комплексні пропозиції з різним рівнем
                   функціоналу та сервісів. Все це дозволить відвідувачу отримати
@@ -347,20 +459,36 @@
             </li>
             <li class="gallery__item">
               <div class="gallery__description">
-                <img
-                  class="gallery__photo"
-                  srcset="
-                    ./images/mobile/project-mobile/project8-mobile@1x.jpg       1x,
-                    ./images/mobile/project-mobile/project8-mobile@2x.jpg       2x,
-                    ./images/tablet/project-tablet/project8-tablet@1x.jpg       1x,
-                    ./images/tablet/project-tablet/project8-tablet@2x.jpg       2x,
-                    ./images/descktop/project-descktop/project8-descktop@1x.jpg 1x,
-                    ./images/descktop/project-descktop/project8-descktop@2x.jpg 2x
-                  "
-                  src="./images/mobile/project-mobile/project8-mobile@1x.jpg"
-                  alt="ярлык компании"
-                  width="450"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/descktop/project-descktop/project8-descktop@1x.jpg 1x,
+                      ./images/descktop/project-descktop/project8-descktop@2x.jpg 2x
+                    "
+                    media="(min-width:1200px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/tablet/project-tablet/project8-tablet@1x.jpg 1x,
+                      ./images/tablet/project-tablet/project8-tablet@2x.jpg 2x
+                    "
+                    media="(min-width:768px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/mobile/project-mobile/project8-mobile@1x.jpg 1x,
+                      ./images/mobile/project-mobile/project8-mobile@2x.jpg 2x
+                    "
+                    media="(max-width:767px)"
+                  />
+
+                  <img
+                    class="gallery__photo"
+                    src="./images/mobile/project-mobile/project8-mobile@1x.jpg"
+                    alt="лого компании"
+                    width="450"
+                  />
+                </picture>
                 <p class="gallery__text">
                   Ресурс пропонує комплексні пропозиції з різним рівнем
                   функціоналу та сервісів. Все це дозволить відвідувачу отримати
@@ -374,20 +502,36 @@
             </li>
             <li class="gallery__item">
               <div class="gallery__description">
-                <img
-                  class="gallery__photo"
-                  srcset="
-                    ./images/mobile/project-mobile/project9-mobile@1x.jpg       1x,
-                    ./images/mobile/project-mobile/project9-mobile@2x.jpg       2x,
-                    ./images/tablet/project-tablet/project9-tablet@1x.jpg       1x,
-                    ./images/tablet/project-tablet/project9-tablet@2x.jpg       2x,
-                    ./images/descktop/project-descktop/project9-descktop@1x.jpg 1x,
-                    ./images/descktop/project-descktop/project9-descktop@2x.jpg 2x
-                  "
-                  src="./images/mobile/project-mobile/project9-mobile@1x.jpg"
-                  alt="пользователь с ноутбуком"
-                  width="450"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/descktop/project-descktop/project9-descktop@1x.jpg 1x,
+                      ./images/descktop/project-descktop/project9-descktop@2x.jpg 2x
+                    "
+                    media="(min-width:1200px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/tablet/project-tablet/project9-tablet@1x.jpg 1x,
+                      ./images/tablet/project-tablet/project9-tablet@2x.jpg 2x
+                    "
+                    media="(min-width:768px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/mobile/project-mobile/project9-mobile@1x.jpg 1x,
+                      ./images/mobile/project-mobile/project9-mobile@2x.jpg 2x
+                    "
+                    media="(max-width:767px)"
+                  />
+
+                  <img
+                    class="gallery__photo"
+                    src="./images/mobile/project-mobile/project9-mobile@1x.jpg"
+                    alt="пользователь с ноутбуком"
+                    width="450"
+                  />
+                </picture>
                 <p class="gallery__text">
                   Ресурс пропонує комплексні пропозиції з різним рівнем
                   функціоналу та сервісів. Все це дозволить відвідувачу отримати

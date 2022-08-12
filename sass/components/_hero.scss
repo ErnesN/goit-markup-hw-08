@@ -6,8 +6,9 @@
     background-size: cover;
     background-image: $linear-gradient, url(../images/mobile/Header-mobile@1x.jpg);
     background-color: $bgc-hero;
-    margin-top: 60px;
+    
     @media screen and (max-width: 767px ) {
+        margin-top: 60px;
         @media screen and (min-device-pixel-ratio:2), 
         screen and (min-resolution: 192dpi),
         screen and (min-resolution: 2dppx) {
