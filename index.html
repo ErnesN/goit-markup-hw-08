@@ -301,20 +301,36 @@
           <h2 class="container__title">Наша команда</h2>
           <ul class="stuff stuff__list">
             <li class="stuff__item">
-              <img
-                class="stuff__photo"
-                srcset="
-                  ./images/mobile/stuff-mobile/stuff1-mobile@1x.jpg       1x,
-                  ./images/mobile/stuff-mobile/stuff1-mobile@2x.jpg       2x,
-                  ./images/tablet/stuff-tablet/stuff1-tablet@1x.jpg       1x,
-                  ./images/tablet/stuff-tablet/stuff1-tablet@2x.jpg       2x,
-                  ./images/descktop/stuff-descktop/stuff1-descktop@1x.jpg 1x,
-                  ./images/descktop/stuff-descktop/stuff1-descktop@2x.jpg 2x
-                "
-                src="./images/mobile/stuff-mobile/stuff1-mobile@1x.jpg"
-                alt="Ігор Дем'яненко"
-                width="450"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/descktop/stuff-descktop/stuff1-descktop@1x.jpg 1x,
+                    ./images/descktop/stuff-descktop/stuff1-descktop@2x.jpg 2x
+                  "
+                  media="(min-width:1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/tablet/stuff-tablet/stuff1-tablet@1x.jpg 1x,
+                    ./images/tablet/stuff-tablet/stuff1-tablet@2x.jpg 2x
+                  "
+                  media="(min-width:768px)"
+                />
+                <source
+                  srcset="
+                    ./images/mobile/stuff-mobile/stuff1-mobile@1x.jpg 1x,
+                    ./images/mobile/stuff-mobile/stuff1-mobile@2x.jpg 2x
+                  "
+                  media="(max-width:767px)"
+                />
+
+                <img
+                  class="stuff__photo"
+                  src="./images/mobile/stuff-mobile/stuff1-mobile@1x.jpg"
+                  alt="Ігор Дем'яненко"
+                  width="450"
+                />
+              </picture>
               <div class="stuff__card">
                 <h3 class="stuff__title-name">Ігор Дем'яненко</h3>
                 <p lang="en" class="stuff__position">Product Designer</p>
@@ -369,20 +385,36 @@
               </div>
             </li>
             <li class="stuff__item">
-              <img
-                class="stuff__photo"
-                srcset="
-                  ./images/mobile/stuff-mobile/stuff2-mobile@1x.jpg       1x,
-                  ./images/mobile/stuff-mobile/stuff2-mobile@2x.jpg       2x,
-                  ./images/tablet/stuff-tablet/stuff2-tablet@1x.jpg       1x,
-                  ./images/tablet/stuff-tablet/stuff2-tablet@2x.jpg       2x,
-                  ./images/descktop/stuff-descktop/stuff2-descktop@1x.jpg 1x,
-                  ./images/descktop/stuff-descktop/stuff2-descktop@2x.jpg 2x
-                "
-                src="./images/mobile/stuff-mobile/stuff2-mobile@1x.jpg"
-                alt="Ольга Репіна"
-                width="450"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/descktop/stuff-descktop/stuff2-descktop@1x.jpg 1x,
+                    ./images/descktop/stuff-descktop/stuff2-descktop@2x.jpg 2x
+                  "
+                  media="(min-width:1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/tablet/stuff-tablet/stuff2-tablet@1x.jpg 1x,
+                    ./images/tablet/stuff-tablet/stuff2-tablet@2x.jpg 2x
+                  "
+                  media="(min-width:768px)"
+                />
+                <source
+                  srcset="
+                    ./images/mobile/stuff-mobile/stuff2-mobile@1x.jpg 1x,
+                    ./images/mobile/stuff-mobile/stuff2-mobile@2x.jpg 2x
+                  "
+                  media="(max-width:767px)"
+                />
+
+                <img
+                  class="stuff__photo"
+                  src="./images/mobile/stuff-mobile/stuff2-mobile@1x.jpg"
+                  alt="Ольга Репіна"
+                  width="450"
+                />
+              </picture>
               <div class="stuff__card">
                 <h3 class="stuff__title-name">Ольга Репіна</h3>
                 <p lang="en" class="stuff__position">Frontend Developer</p>
@@ -437,20 +469,36 @@
               </div>
             </li>
             <li class="stuff__item">
-              <img
-                class="stuff__photo"
-                srcset="
-                  ./images/mobile/stuff-mobile/stuff3-mobile@1x.jpg       1x,
-                  ./images/mobile/stuff-mobile/stuff3-mobile@2x.jpg       2x,
-                  ./images/tablet/stuff-tablet/stuff3-tablet@1x.jpg       1x,
-                  ./images/tablet/stuff-tablet/stuff3-tablet@2x.jpg       2x,
-                  ./images/descktop/stuff-descktop/stuff3-descktop@1x.jpg 1x,
-                  ./images/descktop/stuff-descktop/stuff3-descktop@2x.jpg 2x
-                "
-                src="./images/mobile/stuff-mobile/stuff3-mobile@1x.jpg"
-                alt="Микола Тарасов"
-                width="450"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/descktop/stuff-descktop/stuff3-descktop@1x.jpg 1x,
+                    ./images/descktop/stuff-descktop/stuff3-descktop@2x.jpg 2x
+                  "
+                  media="(min-width:1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/tablet/stuff-tablet/stuff3-tablet@1x.jpg 1x,
+                    ./images/tablet/stuff-tablet/stuff3-tablet@2x.jpg 2x
+                  "
+                  media="(min-width:768px)"
+                />
+                <source
+                  srcset="
+                    ./images/mobile/stuff-mobile/stuff3-mobile@1x.jpg 1x,
+                    ./images/mobile/stuff-mobile/stuff3-mobile@2x.jpg 2x
+                  "
+                  media="(max-width:767px)"
+                />
+
+                <img
+                  class="stuff__photo"
+                  src="./images/mobile/stuff-mobile/stuff3-mobile@1x.jpg"
+                  alt="Микола Тарасов"
+                  width="450"
+                />
+              </picture>
               <div class="stuff__card">
                 <h3 class="stuff__title-name">Микола Тарасов</h3>
                 <p lang="en" class="stuff__position">Marketing</p>
@@ -505,20 +553,36 @@
               </div>
             </li>
             <li class="stuff__item">
-              <img
-                class="stuff__photo"
-                srcset="
-                  ./images/mobile/stuff-mobile/stuff4-mobile@1x.jpg       1x,
-                  ./images/mobile/stuff-mobile/stuff4-mobile@2x.jpg       2x,
-                  ./images/tablet/stuff-tablet/stuff4-tablet@1x.jpg       1x,
-                  ./images/tablet/stuff-tablet/stuff4-tablet@2x.jpg       2x,
-                  ./images/descktop/stuff-descktop/stuff4-descktop@1x.jpg 1x,
-                  ./images/descktop/stuff-descktop/stuff4-descktop@2x.jpg 2x
-                "
-                src="./images/mobile/stuff-mobile/stuff4-mobile@1x.jpg"
-                alt="Михайло Єрмаков"
-                width="450"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/descktop/stuff-descktop/stuff4-descktop@1x.jpg 1x,
+                    ./images/descktop/stuff-descktop/stuff4-descktop@2x.jpg 2x
+                  "
+                  media="(min-width:1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/tablet/stuff-tablet/stuff4-tablet@1x.jpg 1x,
+                    ./images/tablet/stuff-tablet/stuff4-tablet@2x.jpg 2x
+                  "
+                  media="(min-width:768px)"
+                />
+                <source
+                  srcset="
+                    ./images/mobile/stuff-mobile/stuff4-mobile@1x.jpg 1x,
+                    ./images/mobile/stuff-mobile/stuff4-mobile@2x.jpg 2x
+                  "
+                  media="(max-width:767px)"
+                />
+
+                <img
+                  class="stuff__photo"
+                  src="./images/mobile/stuff-mobile/stuff4-mobile@1x.jpg"
+                  alt="Михайло Єрмаков"
+                  width="450"
+                />
+              </picture>
               <div class="stuff__card">
                 <h3 class="stuff__title-name">Михайло Єрмаков</h3>
                 <p lang="en" class="stuff__position">UI Designer</p>
